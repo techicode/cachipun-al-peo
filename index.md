@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/resource/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cachipun-box">
+        <div id="text-result" class="quicksand-font" >Cachipum!!</div>
+        <div id="fight-img" class="width-250 flight-box">
+            <img id="left-img" src="/resource/img/question.svg" alt="insert">
+            <img id="right-img" src="/resource/img/question.svg" alt="insert">
+        </div>
+
+        <div class="results quicksand-font score" >
+            <p>Wins: <span id="left-results">0</span></p>
+            <p>Wins: <span id="right-results">0</span></p>
+        </div>
+
+        <div id="choose" class="width-150 flight-box bottom-icons">
+            <img src="/resource/img/piedra.svg" id="choose-piedra" alt="piedra">
+            <img src="/resource/img/papel.svg" id="choose-papel" alt="papel">
+            <img src="/resource/img/tijera.svg"id="choose-tijera" alt="tijera">
+        </div>
+    </div>
+
+    <script src="/resource/script.js"></script>
+</body>
+
+</html>
