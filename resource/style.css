@@ -1,0 +1,42 @@
+.width-150 {
+    width: 150px;
+}
+
+.width-250 {
+    width: 250px;
+}
+
+.cachipun-box {
+    width: 700px;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flight-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+p {
+    margin: 0 50px;
+}
+
+.bottom-icons {
+    cursor: pointer;
+}
