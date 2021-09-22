@@ -1,3 +1,8 @@
+p {
+    margin: 10px 85px;
+}
+
+
 .width-150 {
     width: 150px;
 }
@@ -33,10 +38,20 @@
     align-content: stretch;
 }
 
-p {
-    margin: 0 50px;
-}
-
 .bottom-icons {
     cursor: pointer;
+}
+
+.quicksand-font {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.score {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#text-result {
+    font-size: 40px;
+    text-transform: uppercase;
 }
