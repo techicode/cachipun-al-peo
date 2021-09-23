@@ -8,7 +8,7 @@ const choosePiedra = document.querySelector('#choose-piedra')
 const chooseTijera = document.querySelector('#choose-tijera')
 
 
-const button = document.querySelector('button');
+const button = document.querySelector('#reset-score');
 const leftImg = document.querySelector('#left-img');
 const rightImg = document.querySelector('#right-img');
 const textResult = document.querySelector('#text-result');
@@ -34,11 +34,15 @@ choosePapel.addEventListener('click', () => {
     results(0);
 })
 
+button.addEventListener('click', () => {
+    leftScore = 0;
+    rigthScore = 0;
+    updateScore();
+})
+
 const declareWinner = (left, right) => {
-    console.log(`left is: ${left} , right: ${right}`);
 
     if (left === right) {
-        console.log('empate')
         textResult.innerText = 'Empate!'
     } else if (left === 1 && right === 0) {
         textResult.innerText = 'Gana Papel!'
@@ -105,9 +109,13 @@ const cachipumText = () => {
 const winnerCounter = (winner) => {
     if (winner === 0) {
         leftScore++;
-        leftResult.innerText = leftScore;
     } else {
         rigthScore++;
-        rightResult.innerText = rigthScore;
     }
+    updateScore();
+}
+
+const updateScore = () => {
+    leftResult.innerText = leftScore;
+    rightResult.innerText = rigthScore;
 }
