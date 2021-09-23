@@ -1,5 +1,4 @@
 const imgs = ['/resource/img/papel.svg', '/resource/img/piedra.svg', '/resource/img/tijera.svg'];
-const times = [1000, 1150, 1000, 1000, 1150, 2000];
 
 let leftScore = 0;
 let rigthScore = 0;
@@ -71,29 +70,32 @@ const randomNum = () => {
     return Math.floor(Math.random() * 3);
 }
 
-const timeDelayed = () => {
-    return [1500, 1500, 1000, 500, 500, 2500];
-}
-
 const results = (leftInput) => {
-    let i = 0;
-    for (const time of times) {
-        setTimeout(() => {
-            rightImg.src = imgs[i];
-            console.log('time ' + time + " i = " + i)
-            i++;
-            if (i > 2) {
-                i = 0;
-            }
-        }, time);
-
-    }
+    changeImgs(imgs, 1000, () => {
+        changeImgs(imgs, 1000, () => {
+            changeImgs(imgs, 1000, () => {
+                changeImgs(imgs, 1000)
+            })
+        })
+    })
 
     setTimeout(() => {
         const randomRight = randomNum();
         rightImg.src = imgs[randomRight];
         declareWinner(leftInput, randomRight);
-    }, 3500)
+    }, 5000)
+}
+
+let i = 0;
+const changeImgs = (imgs, delay, doNext) => {
+    setTimeout(() => {
+        rightImg.src = imgs[i];
+        i++;
+        if (i > 2) {
+            i = 0
+        };
+        doNext && doNext();
+    }, delay)
 }
 
 const cachipumText = () => {
