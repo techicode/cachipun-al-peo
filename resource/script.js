@@ -1,4 +1,4 @@
-const imgs = ['/resource/img/papel.svg', '/resource/img/piedra.svg', '/resource/img/tijera.svg'];
+const imgs = ['resource/img/papel.svg', 'resource/img/piedra.svg', 'resource/img/tijera.svg'];
 
 let leftScore = 0;
 let rigthScore = 0;
