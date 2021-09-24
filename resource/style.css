@@ -2,6 +2,10 @@
     cursor: pointer;
 }
 
+.cachipun-box, body {
+    background-color: #325f76;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
 }
@@ -9,4 +13,13 @@ body {
 #text-result {
     font-size: 40px;
     text-transform: uppercase;
+}
+
+#reset-score {
+    background-color: #85a61e;
+    color: #0f1a23;
+}
+
+.title-cachipun {
+    background-color: #85a61e;
 }
