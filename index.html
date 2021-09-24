@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="/resource/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,22 +16,50 @@
 </head>
 
 <body>
-    <div class="cachipun-box">
-        <div id="text-result" class="quicksand-font" >Cachipum!!</div>
-        <div id="fight-img" class="width-250 flight-box">
-            <img id="left-img" src="/resource/img/question.svg" alt="insert">
-            <img id="right-img" src="/resource/img/question.svg" alt="insert">
-        </div>
 
-        <div class="results quicksand-font score" >
-            <p>Wins: <span id="left-results">0</span></p>
-            <p>Wins: <span id="right-results">0</span></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col text-center">
+                <div id="text-result">Cachipum!!</div>
+            </div>
+            <div class="col-2"></div>
         </div>
-
-        <div id="choose" class="width-150 flight-box bottom-icons">
-            <img src="/resource/img/piedra.svg" id="choose-piedra" alt="piedra">
-            <img src="/resource/img/papel.svg" id="choose-papel" alt="papel">
-            <img src="/resource/img/tijera.svg"id="choose-tijera" alt="tijera">
+        <div class="row">
+            <div class="col">
+                <img id="left-img" src="/resource/img/question.svg" alt="insert">
+            </div>
+            <div class="col">
+                <img id="right-img" src="/resource/img/question.svg" alt="insert">
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <p>Wins: <span id="left-results">0</span></p>
+            </div>
+            <div class="col">
+                <p>Wins: <span id="right-results">0</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col">
+                <img src="/resource/img/piedra.svg" class="bottom-icons" id="choose-piedra" alt="piedra">
+            </div>
+            <div class="col bottom-icons">
+                <img src="/resource/img/papel.svg" class="bottom-icons" id="choose-papel" alt="papel">
+            </div>
+            <div class="col">
+                <img src="/resource/img/tijera.svg" class="bottom-icons" id="choose-tijera" alt="tijera">
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-4"></div>
+            <div class="col text-center gy-4">
+                <button id="reset-score" class="btn btn-dark btn-sm">Reset Score</button>
+            </div>
+            <div class="col-4"></div>
         </div>
     </div>
 
